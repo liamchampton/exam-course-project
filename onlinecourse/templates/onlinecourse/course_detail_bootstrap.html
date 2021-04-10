@@ -76,7 +76,7 @@
         <!-- <HINT> For each question choice, you may create a checkbox input like
             <input type="check" name="choice_{{choice.id}}" id="{{choice.id}}" ...>
             -->
-
+        {% if user.is_authenticated %}
         <div class="card mt-1">
             <button class="btn btn-primary" type="button" data-toggle="collapse"
                 data-target="#lesson_{{lesson.id}}">Start Exam</button>
